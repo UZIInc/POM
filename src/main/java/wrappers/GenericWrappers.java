@@ -150,7 +150,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 */
 	public void enterByName(String nameValue, String data) {
 		try {
-			driver.findElement(By.name(nameValue)).clear();
+			//driver.findElement(By.name(nameValue)).clear();
 			driver.findElement(By.name(nameValue)).sendKeys(data);	
 			reportStep("The data: "+data+" entered successfully in field :"+nameValue, "PASS");
 
