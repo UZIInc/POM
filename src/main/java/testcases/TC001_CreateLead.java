@@ -30,6 +30,13 @@ public class TC001_CreateLead extends LeafTapsWrappers{
 		.enterUserName(userName)
 		.enterPassword(password)
 		.clickLogin()		
-		.clickCRMSFALink();		
+		.clickCRMSFALink()		
+		.clickLeadLink()		
+		.clickMyLeadLink()		
+		.enterCompanyName(comnyName)
+		.enterFirstName(firstName)
+		.enterLastName(lastName)
+		.clickCreateLeadSubmit()		
+		.verifyFirstName(firstName);			
 	}
 }

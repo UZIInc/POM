@@ -30,8 +30,18 @@ public class TC003_EditLead extends LeafTapsWrappers{
 		new LoginPage(driver, test)
 		.enterUserName(userName)
 		.enterPassword(password)
-		.clickLogin()
-		.clickCRMSFALink();		
+		.clickLogin()		
+		.clickCRMSFALink()		
+		.clickLeadLink()		
+		.clickMyLeadLink()		
+		.enterCompanyName(comnyName)
+		.enterFirstName(firstName)
+		.enterLastName(lastName)
+		.clickCreateLeadSubmit()
+		.verifyFirstName(firstName)
+		.clickEditLeadLink()		
+		.updateCompanyName(updcomnyName)
+		.clickUpdateSubmit();		
 	}
 
 }
