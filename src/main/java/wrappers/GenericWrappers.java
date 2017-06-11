@@ -173,7 +173,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 */
 	public void enterByXpath(String xpathValue, String data) {
 		try {
-			driver.findElement(By.xpath(xpathValue)).clear();
+			//driver.findElement(By.xpath(xpathValue)).clear();
 			driver.findElement(By.xpath(xpathValue)).sendKeys(data);	
 			reportStep("The data: "+data+" entered successfully in field :"+xpathValue, "PASS");
 
