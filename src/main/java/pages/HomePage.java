@@ -22,6 +22,12 @@ public class HomePage extends LeafTapsWrappers  {
 		return this;
 	}
 	
+	// Click CRM/SFA 
+		public MyHome clickCRMSFALink(){
+			clickByLink((prop.getProperty("Home.CRMSFA.Link")));
+			return new MyHome(driver, test);
+		}
+
 	public LoginPage clickLogout() {
 		clickByClassName(prop.getProperty("Login.LoginButton.Class"));
 		return new LoginPage(driver,test);
