@@ -353,7 +353,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	public void clickByLink(String name) {
 		try{
 			driver.findElement(By.linkText(name)).click();
-			reportStep("The element with link name: "+name+" is clicked.", "PASS");
+			//reportStep("The element with link name: "+name+" is clicked.", "PASS");
 		} catch (Exception e) {
 			reportStep("The element with link name: "+name+" could not be clicked.", "FAIL");
 		}
